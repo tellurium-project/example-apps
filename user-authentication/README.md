@@ -29,3 +29,9 @@ $ rails s # http://localhost:3000
 * Password: `pass` を入力
 * `Sign in` ボタンを押下
 * ページテキストに `Success` が表示される
+
+## テスト
+
+```
+$ rails spec
+```
