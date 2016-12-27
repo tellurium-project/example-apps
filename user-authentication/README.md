@@ -7,6 +7,8 @@
 * Rails 5
 * RSpec
 * Capybara
+* Selenium
+* ChromeDriver
 
 ## インストール & セットアップ
 
@@ -30,8 +32,8 @@ $ rails s # http://localhost:3000
 * `Sign in` ボタンを押下
 * ページテキストに `Success` が表示される
 
-## テスト
+## GUI テスト (フィーチャーテスト)
 
 ```
-$ rails spec
+$ rails spec:features
 ```
