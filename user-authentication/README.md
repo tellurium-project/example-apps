@@ -1,24 +1,31 @@
-# README
+# User Authentication
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ユーザ認証アプリケーション。
 
-Things you may want to cover:
+## 利用技術
 
-* Ruby version
+* Rails 5
+* RSpec
+* Capybara
 
-* System dependencies
+## インストール & セットアップ
 
-* Configuration
+```
+$ cd example-apps/user-authentication
+$ bundle
+$ rails db:setup
+```
 
-* Database creation
+## 起動
 
-* Database initialization
+```
+$ rails s # http://localhost:3000
+```
 
-* How to run the test suite
+## シナリオ
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* サインイン画面 (`/session/new`) に移動
+* Email: `user@ex.com` を入力
+* Password: `pass` を入力
+* `Sign in` ボタンを押下
+* ページテキストに `Success` が表示される
